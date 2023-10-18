@@ -1,0 +1,251 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    padding-top: 20px;
+    text-align: center;
+    background-color: #307b85;
+}
+
+.page{
+    width: 960px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: left;
+    background-color: white;
+}
+
+/*header*/
+.header{ 
+    background-color: white;
+    border-bottom: 3px solid #307b85;
+    font-size: 1.1em;
+    color: black;
+}
+
+
+.header h1{
+    align-items: center; /*para centrar verticalmente*/
+
+    font-size: larger;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/*BLOQUE 1*/
+
+#bloque1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#parte1{
+    display: flex;
+    flex-direction: row;
+}
+
+#parte2{
+    display: flex;
+    flex-direction: row;
+}
+
+#bloque1h1{
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+#caja1{
+    padding: 2px;
+    margin: 20px;
+
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 20px; 
+
+    border-radius: 20px 30px 10px 50px; /*sup izq, sup derech, inf derech, inf izq*/
+}
+
+#caja2{
+    padding: 2px;
+    margin: 20px;
+
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 20px; 
+
+    border-radius: 10px;
+}
+
+#caja3{
+    padding: 2px;
+    margin: 20px;
+
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 20px; 
+
+    border-radius: 50px;
+    background: linear-gradient(to bottom, #FFFFFF, #307b85);
+}
+
+#caja4{
+    padding: 2px;
+    margin: 20px;
+
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 20px; 
+
+    border-radius: 50px;
+    background:radial-gradient(circle, #FFFFFF 20%, #307b85 200%);
+}
+
+#caja5{
+    padding: 2px;
+    margin: 20px;
+
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 20px; 
+
+    border-radius: 50px;
+}
+
+#caja6{
+    padding: 2px;
+    margin: 20px;
+
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 20px; 
+}
+
+
+/*BLOQUE 2*/
+#bloque2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bloque2h1{
+    padding: 10px;
+    margin: 10px;
+}
+
+#caja7{
+    padding: 2px;
+    margin: 20px;
+
+    width: 800px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 20px; 
+
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px #307b854f;
+
+}
+
+#caja8{
+    padding: 2px;
+    margin: 20px;
+
+    width: 800px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 20px; 
+
+    border-radius: 50px;
+}
+
+#caja9{ 
+    padding: 2px;
+    margin: 20px;
+
+    width: 800px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 20px; 
+
+    border-radius: 50px;
+
+    text-shadow: #307b85 5px 6px 10px;
+}
+
+#caja10{
+    padding: 2px;
+    margin: 20px;
+
+    width: 800px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 20px; 
+    margin-bottom: 20px;
+
+    border-radius: 50px;
+
+    background: linear-gradient(34deg, #FFFFFF, #307b85);
+}
+
+/*Footer*/
+.footer{
+    margin-left: 480px;
+    width: 960px;
+
+    font-size: 0.85em;
+    color: black;
+    text-align: center;
+    border-top:5px solid  #307b85;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+}
