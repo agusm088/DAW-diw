@@ -1,0 +1,133 @@
+*{
+    transition: 0.20s;
+}
+
+body{
+    padding: 10px;
+    margin:10px;
+    text-align: center;
+}
+
+body h1{
+    border-bottom: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+#cuerpo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#martillo1 {
+    position: relative;
+    width: 110px;
+    height: 190px;
+    padding: 16px;
+    border: 1px dotted gray;
+    border-radius: 9px;
+    float: left;
+    margin: 30px;
+    padding: 30px;
+}
+
+#martillo1:hover {
+    transform: rotate(90deg);
+}
+
+#martillo2 {
+    position: relative;
+    width: 110px;
+    height: 190px;
+    padding: 16px;
+    border: 1px dotted gray;
+    border-radius: 9px;
+    float: left;
+    margin: 30px;
+    padding: 30px;
+}
+
+#martillo2:hover {
+    transform:scale(2, 1.75);
+}
+
+#martillo3 {
+    position: relative;
+    width: 110px;
+    height: 190px;
+    padding: 16px;
+    border: 1px dotted gray;
+    border-radius: 9px;
+    float: left;
+    margin: 30px;
+    padding: 30px;
+}
+
+#martillo3:hover {
+    transform:scale(1, -1);
+}
+
+#martillo4 {
+    position: relative;
+    width: 110px;
+    height: 190px;
+    padding: 16px;
+    border: 1px dotted gray;
+    border-radius: 9px;
+    float: left;
+    margin: 30px;
+    padding: 30px;
+}
+
+#martillo4:hover {
+    transform:skew(10deg, 25deg);
+}
+
+#martillo5 {
+    position: relative;
+    width: 110px;
+    height: 190px;
+    padding: 16px;
+    border: 1px dotted gray;
+    border-radius: 9px;
+    float: left;
+    margin: 30px;
+    padding: 30px;
+}
+
+#martillo5:hover {
+    transform:translate(200px, 0px) rotate(33deg) scale(0.5,0.5);
+}
+
+#martillo6 {
+    position: relative;
+    width: 110px;
+    height: 190px;
+    padding: 16px;
+    border: 1px dotted gray;
+    border-radius: 9px;
+    float: left;
+    margin: 30px;
+    padding: 30px;
+}
+
+#martillo6:hover {
+    background-color: rgb(160, 183, 226);
+}
+
+#martillo7 {
+    position: relative;
+    width: 110px;
+    height: 190px;
+    padding: 16px;
+    border: 1px dotted gray;
+    border-radius: 9px;
+    float: left;
+    margin: 30px;
+    padding: 30px;
+}
+
+#martillo7:hover {
+    transform:translate(200px,5px);
+}
