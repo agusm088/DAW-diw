@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+nav ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    /* Arriba | Derecha | Abajo | Izquierda */
+    margin: 20px 0px 20px 0px;
+
+    /* Arriba | Derecha | Abajo | Izquierda */
+    padding: 0px 80px 0px 80px;
+}
+
+.submenu {
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    text-align: center;
+    left: 50%;
+    margin-left: -50px;
+    top: 25px;
+    font: Verdana;
+    font-size: 0.7em;;
+
+    height: 0;
+    overflow: hidden;
+
+    transition: height 0.4s linear;
+}
+
+.submenu.hover{
+    height: 20px;
+}
+
+.desplegable:hover .submenu{
+    height: 100px;
+}
