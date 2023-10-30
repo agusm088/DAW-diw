@@ -38,7 +38,7 @@ nav > ul > li > a {
     height: 0px;
     overflow: hidden;
     width: 145px;
-    transition: height linear 2s;
+    transition: height linear 0.6s;
     z-index: 2;
 }
 
