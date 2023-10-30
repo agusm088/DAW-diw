@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+
+    text-align: center;
 }
 
 a {
@@ -8,43 +10,88 @@ a {
 }
 
 a:hover {
-    color: red;
+    color: rgb(101, 181, 192);
 }
 
-nav ul {
-    position: relative;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-
-    /* Arriba | Derecha | Abajo | Izquierda */
-    margin: 20px 0px 20px 0px;
-
-    /* Arriba | Derecha | Abajo | Izquierda */
-    padding: 0px 80px 0px 80px;
-}
-
-.submenu {
-    position: absolute;
-    z-index: 2;
-    width: 100px;
+/* Menú principal*/
+nav > ul > li {
+    display: inline-block; 
+    text-decoration: none;
+    margin: 50px;
     text-align: center;
-    left: 50%;
-    margin-left: -50px;
-    top: 25px;
-    font: Verdana;
-    font-size: 0.7em;;
+}
 
-    height: 0;
+nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Desplegable submenú*/
+#submenu {
+    position: relative;
+}
+
+/*Todo el submenú*/
+#submenu > ul {
+    position: absolute;
+    left: 10px;
+    height: 0px;
     overflow: hidden;
-
-    transition: height 0.4s linear;
+    width: 145px;
+    transition: height linear 2s;
+    z-index: 2;
 }
 
-.submenu.hover{
-    height: 20px;
+#submenu:hover > ul {
+    height: 200px;
 }
 
-.desplegable:hover .submenu{
-    height: 100px;
+/*Elementos*/
+#submenu > ul > li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: 0px;
+    background-color: #6db9b6;
+}
+
+/*impares*/
+#submenu > ul > li:nth-child(odd) {
+    background-color: #4e8583 !important;
+}
+
+
+/*Bordes*/
+#submenu > ul > li:first-child {
+
+    /*superior*/
+    border-radius: 8px 8px 0px 0px;
+    margin-top: 15px;
+    position: relative;
+}
+
+#submenu > ul > li:last-child {
+    /*inferior*/
+    border-radius: 0px 0px 8px 8px;
+}
+
+/*Triángulo*/
+nav > ul > li > ul > li:first-child:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 5px solid transparent;
+    border-bottom-color: #6db9b6;
+    left: 50%;
+    top: -11px;
+    margin-left: -5px;
+    z-index: 19;
+}
+
+/*Enlaces submenú*/
+#submenu > ul > li > a {
+    color: #fff;
+    margin: 12px;
+    text-decoration: none;
 }
