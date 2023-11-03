@@ -129,12 +129,14 @@ nav li {
 
 nav li a {
     text-decoration: none;
-    color: orange;
-    transition: color 0.2s;
+    color: white;
+    text-shadow: 0px 0px 5px;
 }
 
 nav li a:hover {
-    color: white;
+    text-shadow: 2px 2px 0px red;
+    transition: 0.5s;
+
 }
 
 .clearfix:before,
@@ -210,4 +212,81 @@ footer {
     /*introducimos el redondeo al borde inferior izquierdo y derecho al footer*/
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+/*Desplegable submenú*/
+#submenu {
+    position: relative;
+}
+
+/*Todo el submenú*/
+#submenu > ul {
+    position: absolute;
+    height: 0px;
+    right: -35px;
+    overflow: hidden;
+    width: 145px;
+    transition: height linear 0.6s;
+    z-index: 2;
+}
+
+#submenu:hover > ul {
+    height: 200px;
+}
+
+/*Elementos*/
+#submenu > ul > li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: 0px;
+    background-color: #e34c26;
+}
+
+#submenu > ul > li:hover {
+    background-color: #ff7e42;
+}
+
+/*impares*/
+#submenu > ul > li:nth-child(odd) {
+    background-color: #f06529 !important;
+}
+
+/*Bordes*/
+#submenu > ul > li:first-child {
+
+    /*superior*/
+    border-radius: 8px 8px 0px 0px;
+    margin-top: 15px;
+    position: relative;
+}
+
+#submenu > ul > li:last-child {
+    /*inferior*/
+    border-radius: 0px 0px 8px 8px;
+}
+
+/*Triángulo*/
+nav > ul > li > ul > li:first-child:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 5px solid transparent;
+    border-bottom-color: #e34c26;
+    left: 50%;
+    top: -11px;
+    margin-left: -5px;
+    z-index: 19;
+}
+
+/*Enlaces submenú*/
+#submenu > ul > li > a {
+    color: #fff;
+    margin: 12px;
+    text-decoration: none;
+}
+
+#submenu > ul > li:hover {
+    background-color: #ff7e42;
 }
