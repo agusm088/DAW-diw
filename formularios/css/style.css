@@ -25,6 +25,10 @@ label{
     display: block;
     padding: auto;
     justify-content: center;
+
+    font-family: 'LeagueGothic';
+
+
 }
 
 h1{
@@ -37,6 +41,8 @@ h1{
     url("../imgs/bg-formtitle-right.png") right no-repeat;
     background-repeat: no-repeat;
     background-size: 100px auto;
+
+    font-family: 'AcknowledgementMedium';
 }
 
 #registro-submit{
@@ -46,14 +52,26 @@ h1{
     color: white;
     text-transform: uppercase;
     font-size: 2em;
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: 'LeagueGothic',Tahoma, Geneva, sans-serif;
     opacity: 80%;
+    font-style: italic;
+    width: 300px;
+    height: 60px;
 }
 
 #registro-submit:hover{
     opacity: 100%;
     transition: linear;
     transition-duration: 0.25s;
+}
+
+input{
+    
+border:none;
+border-bottom: 1px dotted #000;
+background: transparent;
+outline: none;
+text-align: center;
 }
 
 input:required{
@@ -72,4 +90,15 @@ input::selection{
     background-color: #484848;
     color: #fff;
     text-shadow: none;
+}
+
+/* Fuentes Importadas */
+@font-face {
+    font-family: LeagueGothic;
+    src: url(../fonts/LeagueGothic-Regular-VariableFont_wdth.ttf);
+}
+
+@font-face {
+    font-family: AcknowledgementMedium;
+    src: url(../fonts/Acknowledgement.otf);
 }
