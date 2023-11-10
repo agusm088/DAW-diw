@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso HTML5 y CSS</title>
+    <link id="miniLogo" rel='icon' type='image/x-icon' href=''>
+    <link rel="stylesheet" href="css/form.css">
+    <title>Curso de HTML5 y CSS3</title>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1 class="h1_header"> <img id="logo_cabecera" src="imgs/logo.png" alt="imagen logo">Curso de HTML5 y CSS3</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li class="contenidos"><a href="index.html">Contenidos</a></li>
+                <li id="submenu" class="videos"><a href="video.html">Videos</a>
+                    <ul>
+                        <li><a href="video.html">Video 1</a></li>
+                        <li><a href="">Video 2</a></li>
+                        <li><a href="">Video 3</a></li>
+                    </ul></li>
+                <li class="contacto"><a>Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <div id="contenedorFormulario">
+
+                <h1 id="h1_form">Contáctenos</h1>
+
+                <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required>
+
+                <input type="email" id="email" name="email" placeholder="Escriba su email" required>
+
+                <textarea cols="30" rows="10" placeholder="Su mensaje..." required></textarea>
+
+                <button id="registro-submit" name="registro-submit">Enviar</button>
+
+            </div>
+
+
+        </main>
+        <footer>
+            <p>HTML y CSS (footer)</p>
+            <p>Diseño de interfaces web - 2DAW</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

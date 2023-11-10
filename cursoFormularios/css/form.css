@@ -1,0 +1,291 @@
+/* Fuentes Importadas */
+@font-face {
+    font-family: LuckiestGuy;
+    src: url(../fonts/LuckiestGuy-Regular.ttf);
+}
+
+@font-face {
+    font-family: Abel;
+    src: url(../fonts/Abel-Regular.ttf);
+}
+
+@font-face {
+    font-family: AguaFina Script;
+    src: url(../fonts/AguafinaScript-Regular.ttf);
+}
+
+/* estilos para el formulario */
+main{
+
+    background-image: url(../imgs/fondoForm.jpg);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#contenedorFormulario{
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+    width: 600px;
+
+    /*orden padding/margin: 
+    ARRIBA | DERECHA | ABAJO | IZQUIERDA
+    arriba y abajo | izquierda y derecha 
+    arriba | izquierda y derecha | abajo */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    background-color: rgba(200, 200, 200, 0.7);
+
+    justify-content: left;
+
+    box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.4);
+
+}
+
+#h1_form{
+    position: absolute;
+    border-top: -16px;
+    left: 490px;
+
+    background-color: rgba(255, 255, 255, 0.7);
+
+    font-family: 'AguaFina Script', Courier, monospace;
+    font-style: italic;
+    color: #333;
+
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 2px #777;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*CSS PÁGINA*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    padding-top: 20px;
+    text-align: center;
+    /*degradado de tono blanco y naranja*/
+    background: linear-gradient(to top, #FFFFFF, #bd5d1c);
+    background-repeat: no-repeat;
+}
+
+.page {
+    width: 960px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: left;
+    /*aplicamos sombra al page*/
+    box-shadow: 5px 5px 10px rgb(26, 26, 26);
+
+}
+
+header {
+    /*degradado de tonos de azules */
+    background: linear-gradient(to top, rgb(100, 211, 255), #3189c4);
+    border-bottom: 6px solid black;
+    font-family: 'LuckiestGuy',Courier, monospace;
+    font-size: 1.1em;
+    color: white;
+    /*introducimos el redondeo al borde superior izquierdo y derecho del header*/
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#logo_cabecera {
+    position: absolute;
+    left: 20px;
+}
+
+header h1 {
+    position: relative;
+    align-items: center;
+    /*para centrar verticalmente*/
+    background-position: 25px 15px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+
+nav {
+    /*degradado de tonos amarillos*/
+    background: linear-gradient(to top, rgb(255, 240, 104), #c7b61c);
+    font-family: 'LuckiestGuy' ,Courier, monospace;
+    font-size: 1.4em;
+    color: silver;
+    text-align: center;
+}
+
+nav li {
+    padding-top: 80px;
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    list-style: none;
+    display: inline-block;
+    cursor: default;
+    text-align: center;
+}
+
+
+.contenidos {
+    background-image: url("../imgs/book.png");
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+
+.videos {
+    background-image: url("../imgs/film.png");
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+
+.contacto {
+    background-image: url("../imgs/mail.png");
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 5px;
+    text-shadow: 2px 2px 5px  #f06529;
+}
+
+nav li a:hover {
+    text-shadow: 0px 0px 5px  #ff7e42;
+    transition: 0.5s;
+
+}
+
+.clearfix:before,
+.clearfix:after,
+main {
+    font-family: 'Abel' ,Verdana, sans-serif;
+    font-size: 0.8em;
+    background-color: white;
+    overflow: hidden;
+    height: 1%;
+    width: 100%;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 1.2em;
+    /*aplicamos sombra a los titulos de los article*/
+    text-shadow: 5px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    font-size: 0.7em;
+    color: white;
+    text-align: center;
+    /*degradado de tonos de azules */
+    background: linear-gradient(to top, #3189c4, rgb(100, 211, 255));
+    border-top: 6px black solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /*introducimos el redondeo al borde inferior izquierdo y derecho al footer*/
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/*Desplegable submenú*/
+#submenu {
+    position: relative;
+}
+
+/*Todo el submenú*/
+#submenu > ul {
+    position: absolute;
+    height: 0px;
+    right: -35px;
+    overflow: hidden;
+    width: 145px;
+    transition: height linear 0.6s;
+    z-index: 2;
+}
+
+#submenu:hover > ul {
+    height: 200px;
+}
+
+/*Elementos*/
+#submenu > ul > li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: 0px;
+    background-color: #e34c26;
+}
+
+#submenu > ul > li:hover {
+    background-color: #ff7e42;
+}
+
+/*impares*/
+#submenu > ul > li:nth-child(odd) {
+    background-color: #f06529 !important;
+}
+
+/*Bordes*/
+#submenu > ul > li:first-child {
+
+    /*superior*/
+    border-radius: 8px 8px 0px 0px;
+    margin-top: 15px;
+    position: relative;
+}
+
+#submenu > ul > li:last-child {
+    /*inferior*/
+    border-radius: 0px 0px 8px 8px;
+}
+
+/*Triángulo*/
+nav > ul > li > ul > li:first-child:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 5px solid transparent;
+    border-bottom-color: #e34c26;
+    left: 50%;
+    top: -11px;
+    margin-left: -5px;
+    z-index: 19;
+}
+
+/*Enlaces submenú*/
+#submenu > ul > li > a {
+    color: #fff;
+    margin: 12px;
+    text-decoration: none;
+}
+
+#submenu > ul > li:hover {
+    background-color: #ff7e42;
+}
