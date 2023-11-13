@@ -68,6 +68,78 @@ main{
     padding-right: 10px;
 }
 
+form input,textarea{
+    display: inline-block;
+    border: 1px soid #e5e5e5;
+    color: black;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    padding: 1px 4px 1px 45px;
+    margin-bottom: 10px;
+    transition: all 0.4s ease-in;
+}
+
+form input{
+    height: 32px;
+    width: 330px;
+}
+
+form input:focus{
+    height: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+}
+
+#nombre{
+    background-image: url("../imgs/icon-nombre.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#nombre:focus:valid{
+    background-image: url("../imgs/valid.png");
+    background-repeat: no-repeat;
+    background-position: 390px;
+}
+
+#nombre:focus:invalid{
+    background-image: url("../imgs/invalid.png");
+    background-repeat: no-repeat;
+    background-position: 390px;
+}
+
+#email{
+    background-image: url("../imgs/icon-correo.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#email:focus:valid{
+    background-image: url("../imgs/valid.png");
+    background-repeat: no-repeat;
+    background-position: 390px;
+}
+
+#email:focus:invalid{
+    background-image: url("../imgs/invalid.png");
+    background-repeat: no-repeat;
+    background-position: 390px;
+}
+
+input + label::after{
+    content: "*";
+}
+
+#mensaje{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    width: 90%;
+    height: 150px;
+    background-image: url("../imgs/icon-mensaje.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+
+}
 
 /*CSS PÁGINA*/
 
