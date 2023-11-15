@@ -1,0 +1,262 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+b{
+    font-weight: bolder;
+}
+
+.page {
+    width: 1950px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo_cabecera {
+    position: absolute;
+    left: 750px;
+    width: 50px;
+
+}
+
+header {
+    position: relative;
+    /*para centrar verticalmente*/
+    background-position: 25px 15px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+    text-align: center;
+    background-color: rgb(26, 21, 168);
+    border-bottom: 6px solid black;
+    font-family: 'LuckiestGuy', Courier, monospace;
+    font-size: 1.1em;
+    color: white;
+    /*introducimos el redondeo al borde superior izquierdo y derecho del header*/
+}
+
+a {
+    color: aliceblue;
+}
+
+
+
+.clearfix:before,
+.clearfix:after,
+main {
+
+    background-color: coral;
+    align-items: center;
+}
+
+aside {
+    list-style: none;
+    background-color: blueviolet;
+    float: right;
+    width: 15%;
+
+}
+
+aside li,
+ul {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*CSS ARTÍCULOS*/
+article {
+    width: 750px;
+    border: 1px lightgray solid;
+    background-color: white;
+    text-align: center;
+    line-height: 1.8em;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 22px;
+    margin: 30px;
+    float: left;
+
+    /*Ajustamos los article para que queden centrados*/
+    margin-right: 33px;
+    margin-left: 33px;
+    
+    /*aplica una altura mínima*/
+    min-height: 490px;
+
+    margin-top: 50px;
+
+}
+
+article img {
+    margin-top: 35px;
+    width: 200px;
+    height: 150px;
+}
+
+.article_header {
+    border-bottom: 1px solid #999999;
+    letter-spacing: 10px;
+    position: relative;
+}
+
+.enlaceArticle{
+    color: black;
+    text-decoration: none;
+
+}
+
+
+/*CSS SUBMENÚ*/
+
+nav {
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+nav li {
+    padding-top: 80px;
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    list-style: none;
+    display: inline-block;
+    cursor: default;
+    text-align: center;
+}
+
+
+.contenidos {
+    background-image: url("../imgs/book.png");
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+
+.videos {
+    background-image: url("../imgs/film.png");
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+
+.contacto {
+    background-image: url("../imgs/mail.png");
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 5px;
+    text-shadow: 2px 2px 5px  #f06529;
+}
+
+nav li a:hover {
+    text-shadow: 0px 0px 5px  #ff7e42;
+    transition: 0.5s;
+
+}
+
+/*Desplegable submenú*/
+#submenu {
+    position: relative;
+}
+
+/*Todo el submenú*/
+#submenu > ul {
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    width: 145px;
+    transition: height linear 0.6s;
+    z-index: 2;
+}
+
+#submenu:hover > ul {
+    height: 200px;
+}
+
+/*Elementos*/
+#submenu > ul > li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: 0px;
+    background-color: #e34c26;
+}
+
+#submenu > ul > li:hover {
+    background-color: #ff7e42;
+}
+
+/*impares*/
+#submenu > ul > li:nth-child(odd) {
+    background-color: #f06529 !important;
+}
+
+/*Bordes*/
+#submenu > ul > li:first-child {
+
+    /*superior*/
+    border-radius: 8px 8px 0px 0px;
+    margin-top: 15px;
+    position: relative;
+}
+
+#submenu > ul > li:last-child {
+    /*inferior*/
+    border-radius: 0px 0px 8px 8px;
+}
+
+/*Triángulo*/
+nav > ul > li > ul > li:first-child:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 5px solid transparent;
+    border-bottom-color: #e34c26;
+    left: 50%;
+    top: -11px;
+    margin-left: -5px;
+    z-index: 19;
+}
+
+/*Enlaces submenú*/
+#submenu > ul > li > a {
+    color: #fff;
+    margin: 12px;
+    text-decoration: none;
+}
+
+#submenu > ul > li:hover {
+    background-color: #ff7e42;
+}
+
+footer {
+    width: auto;
+    text-align: center;
+    background: linear-gradient(to top, rgb(100, 211, 255), #3189c4);
+
+    border-top: 6px solid black;
+    font-family: 'LuckiestGuy', Courier, monospace;
+
+    padding: 10px;
+
+}
