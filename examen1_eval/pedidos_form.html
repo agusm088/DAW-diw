@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link id="miniLogo" rel='icon' type='image/x-icon' href=''>
+    <link rel="stylesheet" href="css/form.css">
+    <title>ESPORNETS</title>
+</head>
+
+<header>
+    <h1 class="h1_header"> <img id="logo_cabecera" src="espornets/espornets.png" alt="imagen logo">ESPORNETS
+    </h1>
+</header>
+
+<body>
+    <div class="page">
+
+        <nav>
+            <ul>
+                <li id="submenu" class="prodsMujer"><a>Productos</a>
+                    <ul>
+                        <li><a href="productosMujer.html">Mujer</a></li>
+                        <li><a href="productosHombre.html">Hombre</a></li>
+                    </ul>
+                </li>
+                <li id="submenu" id="home"><a href="index.html">Home</a></li>
+                <li id="submenu" id="home"><a href="pedidos_form.html">Pedidos</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <article id="art1">
+                <div id="cajaFormulario">
+                <div class="article_header">
+                    <h2>Confirmar compra</h2>
+                </div>
+
+                <form>
+
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellidos..." pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" required>
+                    <br><br>
+
+                    <input type="text" id="dni" name="dni" placeholder="Escriba su DNI..." pattern="[0-9]{8}[A-Za-z]{1}"  minlength="9" maxlength="9" required>
+                    <br><br>
+
+                    <input type="email" id="email" name="email" placeholder="Escriba su email..." pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
+                    <br><br>
+
+
+                    <input type="text" id="telf" name="telf" placeholder="Escriba su teléfono..." pattern="[0-9]{1}" required>
+                    <br><br>
+
+
+                    <input type="date" id="fecha" name="fecha" placeholder="Escriba su fecha de nacimiento..." required>
+                    <br><br>
+
+                    <select name="producto" id="producto" required>
+                        <option value="dog">ZM-120-RUN</option>
+                        <option value="cat">ZM-150-PRO</option>
+                        <option value="hamster">ZM-120-SUP</option>
+                        <option value="parrot">ZM-120-PRO</option>
+                      </select>
+                    <br><br>
+
+                    <input type="color" id="colorCaja" name="colorCaja"required>
+                    <br><br>
+
+
+                    <input type="number" id="unidades" min="0" max="30" name="unidades" placeholder="Unidades..." required>
+                    <br><br>
+
+                    <button id="botonEnviar" name="botonEnviar">CONFIRMAR</button>
+
+                </form>
+            </div>
+            </article>
+
+        </main>
+
+        <aside>
+            <li>
+                <h3>Páginas relacionadas:</h3>
+            </li>
+            <ul><a href="">DeporteEnCasa.com</a></ul>
+            <ul><a href="">FitnessLife.es</a></ul>
+            <ul><a href="">SPORT.com</a></ul>
+            <ul><a href="">MundoDeportivo.com</a></ul>
+            <ul><a href="">SkySports.es</a></ul>
+
+            <li>
+                <h3>Nuestras redes sociales:</h3>
+            </li>
+            <ul><a href="">Instagram</a></ul>
+            <ul><a href="">Tiktok</a></ul>
+            <ul><a href="">Facebook</a></ul>
+            <ul><a href="">X</a></ul>
+            <ul><a href="">Youtube</a></ul>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>ESPORNETS©<br>Calzado deportivo de calidad para todos</p>
+    </footer>
+</body>
+
+</html>

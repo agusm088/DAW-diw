@@ -82,7 +82,7 @@ ul {
 
 /*CSS ARTÍCULOS*/
 article {
-    width: 750px;
+    width: 1500px;
     border: 1px lightgray solid;
     background-color: white;
     text-align: center;
@@ -100,14 +100,10 @@ article {
     margin-left: 33px;
     
     /*aplica una altura mínima*/
-    min-height: 490px;
+    min-height: 400px;
 
-    margin-top: 50px;
+    margin-top: 30px;
 
-}
-
-#art1:hover{
-    transform:scale(1.1, 1.1);
 }
 
 article img {
@@ -117,15 +113,9 @@ article img {
 }
 
 .article_header {
-    border-bottom: 1px solid #999999;
     letter-spacing: 10px;
     position: relative;
-}
-
-.enlaceArticle{
-    color: black;
-    text-decoration: none;
-
+    margin-bottom: 15px;
 }
 
 
@@ -269,4 +259,43 @@ footer {
 
     padding: 10px;
 
+}
+
+/*CSS FORMULARIO*/
+
+form input{
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    padding: 0px 4px 0px 5px;
+    transition: all 0.4s ease-in;
+
+    height: 30px;
+}
+
+#cajaFormulario{
+    margin: 5px;
+    padding: 20px;
+    background: linear-gradient(rgba(236, 180, 163, 0.781), rgb(243, 154, 133, 0.781));
+    border-radius: 100px;
+}
+
+form input:focus{
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+}
+
+form label{
+    font-style: italic;
+}
+
+#botonEnviar{
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(60, 56, 172, 0.274);
+    font-weight: bolder;
 }
