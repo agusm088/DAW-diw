@@ -1,3 +1,20 @@
+/*FUENTES IMPORTADAS*/
+@font-face {
+    font-family: RussoOneRegular;
+    src: url(../fonts/Russo_One/RussoOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: KanitLight;
+    src: url(../fonts/Kanit/Kanit-Light.ttf);
+}
+
+@font-face {
+    font-family: KanitSemiBold;
+    src: url(../fonts/Kanit/Kanit-SemiBold.ttf);
+}
+
+
 * {
     padding: 0px;
     margin: 0px;
@@ -40,7 +57,7 @@ header {
     text-align: center;
     background: linear-gradient(rgb(60, 56, 172), rgb(26, 21, 168));
     border-bottom: 6px solid black;
-    font-family: 'LuckiestGuy', Courier, monospace;
+    font-family: 'RussoOneRegular', Courier, monospace;
     font-size: 1.1em;
     color: white;
     /*introducimos el redondeo al borde superior izquierdo y derecho del header*/
@@ -71,13 +88,15 @@ aside {
 aside h3{
     font-weight: bolder;
     font-size: 22px;
+    font-family: 'RussoOneRegular', Courier, monospace;
 }
 
 aside li,
 ul {
-    list-style: none;
     margin: 10px;
     padding: 10px;
+    list-style: none;
+    font-family: 'RussoOneRegular', Courier, monospace;
 }
 
 /*CSS ARTÍCULOS*/
@@ -120,12 +139,17 @@ article img {
     border-bottom: 1px solid #999999;
     letter-spacing: 10px;
     position: relative;
+    font-family: 'RussoOneRegular', Courier, monospace;
 }
 
 .enlaceArticle{
     color: black;
     text-decoration: none;
 
+}
+
+p{
+    font-family: KanitLight, Courier, monospace;
 }
 
 
@@ -136,6 +160,7 @@ nav {
     align-items: center;
     text-align: center;
     border-radius: 20px;
+    font-family: 'RussoOneRegular', Courier, monospace;
 
 }
 
@@ -265,8 +290,42 @@ footer {
     color: white;
 
     border-top: 6px solid black;
-    font-family: 'LuckiestGuy', Courier, monospace;
+    font-family: 'RussoOneRegular', Courier, monospace;
 
     padding: 10px;
 
 }
+
+footer p{
+    font-family: 'KanitSemiBold', Courier, monospace;
+
+}
+
+/*ANIMACIONES*/
+@keyframes zooms {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+  .h1_header{
+    animation: zooms 2s ease-in-out;
+  }
+
+  @keyframes zooms_aside {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }

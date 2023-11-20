@@ -26,6 +26,14 @@
                 </li>
                 <li id="submenu" id="home"><a href="index.html">Home</a></li>
                 <li id="submenu" id="home"><a href="pedidos_form.html">Pedidos</a></li>
+
+                <li id="submenu" class="videos"><a>Vídeos</a>
+                    <ul>
+                        <li><a href="video1.html">Vídeo 1</a></li>
+                        <li><a href="video2.html">Vídeo 2</a></li>
+                        <li><a href="video3.html">Vídeo 3</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 
@@ -38,7 +46,6 @@
                 </div>
 
                 <form>
-
                     <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellidos..." pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" required>
                     <br><br>
 
@@ -52,10 +59,11 @@
                     <input type="text" id="telf" name="telf" placeholder="Escriba su teléfono..." pattern="[0-9]{1}" required>
                     <br><br>
 
-
+                    <label>Fecha nacimiento: </label>
                     <input type="date" id="fecha" name="fecha" placeholder="Escriba su fecha de nacimiento..." required>
                     <br><br>
 
+                    <label>Producto: </label>
                     <select name="producto" id="producto" required>
                         <option value="dog">ZM-120-RUN</option>
                         <option value="cat">ZM-150-PRO</option>
@@ -64,6 +72,7 @@
                       </select>
                     <br><br>
 
+                    <label>Color caja: </label>
                     <input type="color" id="colorCaja" name="colorCaja"required>
                     <br><br>
 

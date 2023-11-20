@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <link id="miniLogo" rel='icon' type='image/x-icon' href=''>
-    <link rel="stylesheet" href="css/productosMujer.css">
-    <title><a href="index.html">ESPORNETS</a></title>
+    <link rel="stylesheet" href="css/videos.css">
+    <title>ESPORNETS</title>
 </head>
 
 <header>
-    <h1 class="h1_header"> <img id="logo_cabecera" src="espornets/espornets.png" alt="imagen logo"><a
-            href="index.html">ESPORNETS</a>
+    <h1 class="h1_header"> <img id="logo_cabecera" src="espornets/espornets.png" alt="imagen logo">ESPORNETS
     </h1>
 </header>
 
@@ -41,38 +40,24 @@
         <main>
 
             <article id="art1">
-                <table BORDER id="tablaM">
-                    <tr>
-                        <td>COD_PRODUCTO</td>
-                        <td>DESCRIPCIÓN</td>
-                        <td>TALLAS DISPONIBLES</td>
-                        <td>PVP</td>
-                    </tr>
-                    <tr>
-                        <td>ZM-120-RUN</td>
-                        <td>Zapatilla mujer runner</td>
-                        <td>34-42</td>
-                        <td>80€</td>
-                    </tr>
-                    <tr>
-                        <td>ZH-150-PRO </td>
-                        <td>Zapatilla mujer pronador</td>
-                        <td>34-42</td>
-                        <td>150€</td>
-                    </tr>
-                    <tr>
-                        <td>ZH-120-SUP</td>
-                        <td>Zapatilla mujer supinador</td>
-                        <td>34-42</td>
-                        <td>150€</td>
-                    </tr>
-                    <tr>
-                        <td>ZH-120-PRO</td>
-                        <td>Zapatilla mujer profesional</td>
-                        <td>34-42</td>
-                        <td>200€</td>
-                    </tr>
-                </table>
+
+                <div id="reproductor">
+
+                    <video width="1360" height="566" controls>
+                        <source src="espornets/Tu ritmo, tus zapatillas.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <nav id="botones">
+                    <input type="button" id="reiniciar" value="reiniciar">
+                    <input type="button" id="retrasar" value="&laquo;">
+                    <input type="button" id="play" value="&#9658;">
+                    <input type="button" id="adelantar" value="&raquo;">
+                    <input type="button" id="silenciar" value="silenciar">
+                    <label>Volumen</label>
+                    <input type="button" id="menosVolumen" value="-">
+                    <input type="button" id="masVolumen" value="+">
+                </nav>
+
             </article>
 
         </main>
@@ -97,15 +82,11 @@
             <ul><a href="">Youtube</a></ul>
         </aside>
 
-
-
     </div>
 
     <footer>
         <p>ESPORNETS©<br>Calzado deportivo de calidad para todos</p>
     </footer>
-
-
 </body>
 
 </html>
