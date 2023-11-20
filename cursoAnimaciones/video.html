@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso HTML5 y CSS</title>
+    <link id="miniLogo" rel='icon' type='image/x-icon' href=''>
+    <link rel="stylesheet" href="css/reproductor.css">
+    <title>Curso de HTML5 y CSS3</title>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1 class="h1_header"> <img id="logo_cabecera" src="imgs/logo.png" alt="imagen logo">Curso de HTML5 y CSS3
+            </h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li class="contenidos"><a href="index.html">Contenidos</a></li>
+                <li id="submenu" class="videos"><a>Videos</a>
+                    <ul>
+                        <li><a href="video.html">Video 1</a></li>
+                        <li><a href="">Video 2</a></li>
+                        <li><a href="">Video 3</a></li>
+                    </ul></li>
+                <li class="contacto"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <div id="reproductor">
+                <video id="medio" width="720" height="400">
+                    <source src="media/trailer.mp4">
+                    <source src="media/trailer.ogg">
+                </video>
+                <div id="barra">
+                    <div id="progreso"></div>
+                </div>
+            </div>
+            <nav id="botones">
+                <input type="button" id="reiniciar" value="reiniciar">
+                <input type="button" id="retrasar" value="&laquo;">
+                <input type="button" id="play" value="&#9658;">
+                <input type="button" id="adelantar" value="&raquo;">
+                <input type="button" id="silenciar" value="silenciar">
+                <label>Volumen</label>
+                <input type="button" id="menosVolumen" value="-">
+                <input type="button" id="masVolumen" value="+">
+            </nav>
+
+        </main>
+
+        <footer>
+            <p>HTML y CSS (footer)</p>
+            <p>Diseño de interfaces web - 2DAW</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
