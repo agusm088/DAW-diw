@@ -1,39 +1,68 @@
-@media all and (max-width: 600px) {
-
-    div,
-    nav,
-    header,
-    aside,
-    main {
-        /* Cuando el ancho sea inferior a 600px el elemento será un bloque */
-        display: block !important;
-        /* Se ajustarán al ancho de la ventana */
-        width: 100% !important;
-        height: 62px;
-        margin: auto !important;
-        /* La posición será estática (flujo normal del documento) */
-        position: static !important;
-        /* los elementos dejarán de ser flotantes */
-        float: none !important;
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #444;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ccc;
+  }
+  
+  nav > a {
+    display: none;
+  }
+  
+  @media all and (max-width: 475px) {
+    nav ul {
+      display: none;
     }
-}
-
-nav{
-    background-color: aquamarine;
-    width: 100%;
-}
-
-.pagina header{
-    background-color: blueviolet;
-    width: 100%;
-}
-
-aside{
-    background-color: brown;
-    width: 40%;
-}
-
-main{
-    background-color: chocolate;
-    width: 60%;
-}
+    nav > a {
+      display: block;
+      padding: 10px 15px;
+      color: #fff;
+      background-color: #0084B4;
+      text-decoration: none;
+      margin: 3px;
+    }
+  }
+  
+  ul.desplegado {
+    display: none;
+    list-style: none;
+  }
+  
+  ul.desplegado li {
+    display: block;
+    text-align: center;
+  }
+  
+  ul.desplegado li a {
+    display: block;
+    border-bottom: 1px solid #ccc;
+  }
+  
