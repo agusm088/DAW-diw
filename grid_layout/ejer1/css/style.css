@@ -1,0 +1,85 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto 1fr 1fr;
+    gap: 20px;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Se agrega margen a todos los divs */
+div {
+    margin: 10px;
+}
+
+/* Fondo principal blanco */
+body {
+    background-color: white;
+}
+
+.cabecera {
+    grid-area: 1 / 1 / 2 / 7;
+
+    text-align: center;
+    /* Texto centrado */
+    border: 2px solid orange;
+    /* Borde de color naranja */
+    background-color: #FFDAB9;
+    /* Fondo de color "carne" */
+}
+
+/* Se ajusta la posición del nav a la izquierda */
+.nav {
+    grid-area: 2 / 1 / 4 / 2;
+    
+    text-align: center;
+    /* Texto centrado */
+    border: 2px solid orange;
+    /* Borde de color naranja */
+    background-color: #FFDAB9;
+    /* Fondo de color "carne" */
+}
+
+.lorem {
+    grid-area: 2 / 2 / 4 / 6;
+
+    text-align: center;
+    /* Texto centrado */
+    border: 2px solid orange;
+    /* Borde de color naranja */
+    background-color: #FFDAB9;
+    /* Fondo de color "carne" */
+}
+
+.barra-lateral {
+    grid-area: 2 / 6 / 3 / 7;
+
+    text-align: center;
+    /* Texto centrado */
+    border: 2px solid orange;
+    /* Borde de color naranja */
+    background-color: #FFDAB9;
+    /* Fondo de color "carne" */
+}
+
+.barra-lateral-abajo {
+    grid-area: 3 / 6 / 4 / 7;
+    text-align: center;
+    /* Texto centrado */
+    border: 2px solid orange;
+    /* Borde de color naranja */
+    background-color: #FFDAB9;
+    /* Fondo de color "carne" */
+}
+
+.footer {
+    grid-area: 4 / 1 / 5 / 7;
+
+    text-align: center;
+    /* Texto centrado */
+    border: 2px solid orange;
+    /* Borde de color naranja */
+    background-color: #FFDAB9;
+    /* Fondo de color "carne" */
+}
