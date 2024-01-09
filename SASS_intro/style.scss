@@ -1,0 +1,35 @@
+$color1: #FF8000;
+$color2: #2E5F64;
+
+:not(.destacado) /*indicamos que no sea .destacado*/
+ {
+    p::first-line{ /*y que tenga efecto en la primera línea*/
+        font-style: italic;
+    }
+  }
+
+  div{
+    padding: 20px;
+    #parrafos{
+        text-align: right;
+      }
+  }
+
+#primero{
+    .destacado{
+        color: $color1;
+        font-size: 1.6em;
+        text-align: center;
+        padding: 6px;
+
+    }
+}
+
+#segundo{
+    .destacado{
+        color: $color2;
+        font-size: 1.4em;
+        text-decoration: underline;
+        padding: 5px;
+    }
+}
