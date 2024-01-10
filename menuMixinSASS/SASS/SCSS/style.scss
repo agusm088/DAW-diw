@@ -1,0 +1,116 @@
+/* Variables */
+$colorTexto: #eee;
+$colorTextoHover: #fff;
+$colorFondo: #666;
+$colorFondoHover: #888;
+
+/* Mixin */
+@mixin colorFondo($text, $background) {
+    color: $text;
+    background-color: $background;
+}
+
+@mixin colorFondoHover($text, $background) {
+    &:hover {
+        color: $text;
+        background-color: $background;
+    }
+}
+
+@mixin box-sizing($value) {
+    -webkit-box-sizing: $value;
+    -moz-box-sizing: $value;
+    box-sizing: $value;
+}
+
+@mixin transition($property, $duration, $timing: linear) {
+    -webkit-transition: $property $duration $timing;
+    -moz-transition: $property $duration $timing;
+    -o-transition: $property $duration $timing;
+    transition: $property $duration $timing;
+}
+
+@mixin animation($name, $duration, $timing: linear) {
+    -webkit-animation: $name $duration $timing;
+    -moz-animation: $name $duration $timing;
+    -o-animation: $name $duration $timing;
+    animation: $name $duration $timing;
+}
+
+/* Sass */
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: $colorFondo;
+    color: $colorTexto;
+    text-align: left;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 20px;
+}
+
+nav {
+    ul {
+        list-style: none;
+        padding: 0;
+
+        .categoria {
+            display: inline-block;
+            margin-right: 20px;
+
+            a {
+                text-decoration: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                @include transition(all, 0.3s);
+                @include colorFondo($colorTexto, $colorFondo);
+
+                &:hover {
+                    @include colorFondoHover($colorTextoHover, $colorFondoHover);
+                }
+            }
+
+            .submenu {
+                display: none;
+                position: absolute;
+                margin-top: 18px;
+
+                li {
+                    display: block;
+                    margin-bottom: 8px;
+
+                    a {
+                        @include transition(all, 0.3s);
+                        padding: 8px 15px;
+
+                        &:hover {
+                            @include colorFondoHover($colorTextoHover, $colorFondoHover);
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .submenu {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $colorFondo;
+    color: $colorTexto;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    @include box-sizing(border-box);
+}
