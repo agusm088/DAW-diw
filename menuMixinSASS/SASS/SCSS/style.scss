@@ -1,10 +1,10 @@
-/* Variables */
+//Variables
 $colorTexto: #eee;
 $colorTextoHover: #fff;
 $colorFondo: #666;
 $colorFondoHover: #888;
 
-/* Mixin */
+//Mixin
 @mixin colorFondo($text, $background) {
     color: $text;
     background-color: $background;
@@ -37,11 +37,11 @@ $colorFondoHover: #888;
     animation: $name $duration $timing;
 }
 
-/* Sass */
+//Sass
 body {
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
 }
 
 header {
@@ -49,12 +49,17 @@ header {
     color: $colorTexto;
     text-align: left;
     font-weight: bolder;
-    margin-bottom: 20px;
     font-size: 24px;
     padding: 20px;
+    color: #4e4e4e;
+    background-color: #c7c7c7;
+
 }
 
 nav {
+    background-color: $colorFondo;
+    display: flow-root;
+
     ul {
         list-style: none;
         padding: 0;
@@ -66,7 +71,6 @@ nav {
             a {
                 text-decoration: none;
                 padding: 10px 15px;
-                border-radius: 5px;
                 @include transition(all, 0.3s);
                 @include colorFondo($colorTexto, $colorFondo);
 
@@ -78,15 +82,15 @@ nav {
             .submenu {
                 display: none;
                 position: absolute;
-                margin-top: 18px;
+
 
                 li {
                     display: block;
-                    margin-bottom: 8px;
+
 
                     a {
                         @include transition(all, 0.3s);
-                        padding: 8px 15px;
+                        display: block;
 
                         &:hover {
                             @include colorFondoHover($colorTextoHover, $colorFondoHover);
@@ -103,6 +107,15 @@ nav {
         }
     }
 }
+
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .categoria {
+      flex: 0 0 100%;
+      margin: 10px 0;
+    }
+  }
 
 footer {
     background-color: $colorFondo;

@@ -1,10 +1,8 @@
-/* Variables */
-/* Mixin */
-/* Sass */
+@charset "UTF-8";
 body {
   background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
 }
 
 header {
@@ -12,11 +10,16 @@ header {
   color: #eee;
   text-align: left;
   font-weight: bolder;
-  margin-bottom: 20px;
   font-size: 24px;
   padding: 20px;
+  color: #4e4e4e;
+  background-color: #c7c7c7;
 }
 
+nav {
+  background-color: #666;
+  display: flow-root;
+}
 nav ul {
   list-style: none;
   padding: 0;
@@ -28,7 +31,6 @@ nav ul .categoria {
 nav ul .categoria a {
   text-decoration: none;
   padding: 10px 15px;
-  border-radius: 5px;
   transition: all 0.3s linear;
   color: #eee;
   background-color: #666;
@@ -40,15 +42,13 @@ nav ul .categoria a:hover:hover {
 nav ul .categoria .submenu {
   display: none;
   position: absolute;
-  margin-top: 18px;
 }
 nav ul .categoria .submenu li {
   display: block;
-  margin-bottom: 8px;
 }
 nav ul .categoria .submenu li a {
   transition: all 0.3s linear;
-  padding: 8px 15px;
+  display: block;
 }
 nav ul .categoria .submenu li a:hover:hover {
   color: #fff;
@@ -58,6 +58,13 @@ nav ul .categoria:hover .submenu {
   display: block;
 }
 
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .categoria {
+    flex: 0 0 100%;
+    margin: 10px 0;
+  }
+}
 footer {
   background-color: #666;
   color: #eee;
