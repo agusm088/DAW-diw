@@ -1,0 +1,32 @@
+//Mixin
+@mixin colorFondo($text, $background) {
+    color: $text;
+    background-color: $background;
+}
+
+@mixin colorFondoHover($text, $background) {
+    &:hover {
+        color: $text;
+        background-color: $background;
+    }
+}
+
+@mixin box-sizing($value) {
+    -webkit-box-sizing: $value;
+    -moz-box-sizing: $value;
+    box-sizing: $value;
+}
+
+@mixin transition($property, $duration, $timing: linear) {
+    -webkit-transition: $property $duration $timing;
+    -moz-transition: $property $duration $timing;
+    -o-transition: $property $duration $timing;
+    transition: $property $duration $timing;
+}
+
+@mixin animation($name, $duration, $timing: linear) {
+    -webkit-animation: $name $duration $timing;
+    -moz-animation: $name $duration $timing;
+    -o-animation: $name $duration $timing;
+    animation: $name $duration $timing;
+}

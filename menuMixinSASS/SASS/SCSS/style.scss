@@ -1,11 +1,12 @@
 //Variables
 $colorTexto: #eee;
-$colorTextoHover: #fff;
-$colorFondo: #666;
-$colorFondoHover: #888;
+$colorTextoHover: lighten($colorTexto, 10%);
+$colorFondo: #15a;
+$colorFondoHover: lighten($colorFondo, 10%);
+$colorTitulo: darken($colorFondo, 10%);
 
 //Mixin
-@mixin colorFondo($text, $background) {
+/*@mixin colorFondo($text, $background) {
     color: $text;
     background-color: $background;
 }
@@ -35,7 +36,7 @@ $colorFondoHover: #888;
     -moz-animation: $name $duration $timing;
     -o-animation: $name $duration $timing;
     animation: $name $duration $timing;
-}
+}*/
 
 //Sass
 body {
@@ -102,6 +103,7 @@ nav {
             &:hover {
                 .submenu {
                     display: block;
+                    animation: fadeIn 0.3s ease;
                 }
             }
         }
@@ -112,10 +114,24 @@ nav {
 /* Para pantallas más pequeñas */
 @media (max-width: 768px) {
     .categoria {
-      flex: 0 0 100%;
-      margin: 10px 0;
+        flex: 0 0 100%;
+        margin: 10px 0;
     }
-  }
+}
+
+/**/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 footer {
     background-color: $colorFondo;
