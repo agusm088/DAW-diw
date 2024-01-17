@@ -1,42 +1,12 @@
+//Mixin
+@import '../MIXIN/mixin';
+
 //Variables
 $colorTexto: #eee;
 $colorTextoHover: lighten($colorTexto, 10%);
 $colorFondo: #15a;
 $colorFondoHover: lighten($colorFondo, 10%);
 $colorTitulo: darken($colorFondo, 10%);
-
-//Mixin
-/*@mixin colorFondo($text, $background) {
-    color: $text;
-    background-color: $background;
-}
-
-@mixin colorFondoHover($text, $background) {
-    &:hover {
-        color: $text;
-        background-color: $background;
-    }
-}
-
-@mixin box-sizing($value) {
-    -webkit-box-sizing: $value;
-    -moz-box-sizing: $value;
-    box-sizing: $value;
-}
-
-@mixin transition($property, $duration, $timing: linear) {
-    -webkit-transition: $property $duration $timing;
-    -moz-transition: $property $duration $timing;
-    -o-transition: $property $duration $timing;
-    transition: $property $duration $timing;
-}
-
-@mixin animation($name, $duration, $timing: linear) {
-    -webkit-animation: $name $duration $timing;
-    -moz-animation: $name $duration $timing;
-    -o-animation: $name $duration $timing;
-    animation: $name $duration $timing;
-}*/
 
 //Sass
 body {
@@ -69,6 +39,14 @@ nav {
             display: inline-block;
             margin-right: 20px;
 
+            &:hover{
+                .submenu{
+                    display: block;
+                    animation: fadeIn 0.3s ease;
+
+                }
+            }
+
             a {
                 text-decoration: none;
                 padding: 10px 15px;
@@ -77,6 +55,10 @@ nav {
 
                 &:hover {
                     @include colorFondoHover($colorTextoHover, $colorFondoHover);
+
+                    .submenu {
+                        animation: fadeIn 0.3s ease;
+                    }
                 }
             }
 
@@ -103,23 +85,14 @@ nav {
             &:hover {
                 .submenu {
                     display: block;
-                    animation: fadeIn 0.3s ease;
+
                 }
             }
         }
     }
 }
 
-
-/* Para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .categoria {
-        flex: 0 0 100%;
-        margin: 10px 0;
-    }
-}
-
-/**/
+/*Animación*/
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -142,4 +115,44 @@ footer {
     bottom: 0;
     width: 100%;
     @include box-sizing(border-box);
+}
+
+//Hacerlo responsive.
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .categoria {
+        flex: 0 0 100%;
+        margin: 10px 0;
+    }
+}
+
+//PlaceHolder
+%button-block {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+%input-block {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid #bbb;
+}
+
+#contenido {
+    padding: 30px 25px;
+
+    .col-left {
+        box-sizing: border-box;
+        width: 30%;
+        float: left;
+        padding: 10px;
+        
+    }
 }

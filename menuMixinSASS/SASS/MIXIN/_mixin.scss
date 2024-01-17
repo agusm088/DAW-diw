@@ -30,3 +30,17 @@
     -o-animation: $name $duration $timing;
     animation: $name $duration $timing;
 }
+
+@mixin responsive ($media) {
+    @if ($media ==small) {
+        @media(max-width: 800px) {
+            @content;
+        }
+    }
+
+    @else if ($media ==medium) {
+        @media(max-width: 800px) {
+            @content;
+        }
+    }
+}
