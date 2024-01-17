@@ -1,6 +1,9 @@
 //Mixin
 @import '../MIXIN/mixin';
 
+//PlaceHolder
+@import '../SCSS/contenido';
+
 //Variables
 $colorTexto: #eee;
 $colorTextoHover: lighten($colorTexto, 10%);
@@ -39,8 +42,8 @@ nav {
             display: inline-block;
             margin-right: 20px;
 
-            &:hover{
-                .submenu{
+            &:hover {
+                .submenu {
                     display: block;
                     animation: fadeIn 0.3s ease;
 
@@ -124,35 +127,5 @@ footer {
     .categoria {
         flex: 0 0 100%;
         margin: 10px 0;
-    }
-}
-
-//PlaceHolder
-%button-block {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid transparent;
-    cursor: pointer;
-}
-
-%input-block {
-    box-sizing: border-box;
-    width: 100%;
-    border-radius: 5px;
-    padding: 5px 10px;
-    border: 1px solid #bbb;
-}
-
-#contenido {
-    padding: 30px 25px;
-
-    .col-left {
-        box-sizing: border-box;
-        width: 30%;
-        float: left;
-        padding: 10px;
-        
     }
 }

@@ -1,4 +1,15 @@
 @charset "UTF-8";
+/*DIV contenido*/
+#contenido {
+  padding: 30px 25px;
+}
+#contenido .col-left {
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+  padding: 10px;
+}
+
 body {
   background-color: #f4f4f4;
   margin: 0%;
@@ -93,13 +104,4 @@ footer {
     flex: 0 0 100%;
     margin: 10px 0;
   }
-}
-#contenido {
-  padding: 30px 25px;
-}
-#contenido .col-left {
-  box-sizing: border-box;
-  width: 30%;
-  float: left;
-  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
