@@ -1,0 +1,73 @@
+//Mixin
+@import '../MIXIN/mixin';
+
+//Variables
+$colorFondo: #15a;
+$colorTitulo: darken($colorFondo, 10%);
+
+//PlaceHolder
+%button-block {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+%input-block {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid #bbb;
+}
+
+/*DIV contenido*/
+#contenido {
+    padding: 30px 25px;
+
+    .col-left {
+        box-sizing: border-box;
+        width: 30%;
+        float: left;
+        padding: 10px;
+
+        input {
+            @extend %input-block;
+        }
+
+        button {
+            @extend %button-block;
+        }
+
+        @include responsivo(float, none);
+        @include responsivo(width, 100%);
+    }
+
+    .col-right {
+        box-sizing: border-box;
+        margin-left: 30%;
+        width: 70%;
+        padding: 10px;
+
+        h1 {
+            color: $colorTitulo;
+            font-size: 1.6em;
+        }
+        @include responsivo(margin-left, 0);
+        @include responsivo(width, 100%);
+    }
+
+    .button-action {
+        background-color: $colorFondo;
+        color: white;
+
+        &:hover {
+            background-color: lighten($color: $colorFondo, $amount: 20%);
+        }
+    }
+
+    @include responsivo(padding, 18px 20px);
+
+}
