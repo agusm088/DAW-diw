@@ -1,4 +1,47 @@
 @charset "UTF-8";
+/*@mixin responsive ($media) {
+    @if ($media == small) {
+        @media(max-width: 800px) {
+            @content;
+        }
+    }
+
+    @else if ($media == medium) {
+        @media(max-width: 800px) {
+            @content;
+        }
+    }
+}*/
+/*@mixin responsive ($media) {
+    @if ($media == small) {
+        @media(max-width: 800px) {
+            @content;
+        }
+    }
+
+    @else if ($media == medium) {
+        @media(max-width: 800px) {
+            @content;
+        }
+    }
+}*/
+#contenido .col-left button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+#contenido .col-left input {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #bbb;
+}
+
 /*DIV contenido*/
 #contenido {
   padding: 30px 25px;
@@ -8,6 +51,73 @@
   width: 30%;
   float: left;
   padding: 10px;
+}
+@media (max-width: 1024px) {
+  #contenido .col-left {
+    float: none;
+  }
+}
+@media (max-width: 800px) {
+  #contenido .col-left {
+    float: none;
+  }
+}
+@media (max-width: 1024px) {
+  #contenido .col-left {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  #contenido .col-left {
+    width: 100%;
+  }
+}
+#contenido .col-right {
+  box-sizing: border-box;
+  margin-left: 30%;
+  width: 70%;
+  padding: 10px;
+}
+#contenido .col-right h1 {
+  color: #0c3e7c;
+  font-size: 1.6em;
+}
+@media (max-width: 1024px) {
+  #contenido .col-right {
+    margin-left: 0;
+  }
+}
+@media (max-width: 800px) {
+  #contenido .col-right {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1024px) {
+  #contenido .col-right {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  #contenido .col-right {
+    width: 100%;
+  }
+}
+#contenido .button-action {
+  background-color: #15a;
+  color: white;
+}
+#contenido .button-action:hover {
+  background-color: #3686eb;
+}
+@media (max-width: 1024px) {
+  #contenido {
+    padding: 18px 20px;
+  }
+}
+@media (max-width: 800px) {
+  #contenido {
+    padding: 18px 20px;
+  }
 }
 
 body {

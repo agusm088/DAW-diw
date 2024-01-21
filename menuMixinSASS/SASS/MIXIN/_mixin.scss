@@ -31,16 +31,28 @@
     animation: $name $duration $timing;
 }
 
-@mixin responsive ($media) {
-    @if ($media ==small) {
+@mixin responsivo($property, $value) {
+    @media (max-width: 1024px) {
+        // Tamaño medium
+        #{$property}: $value;
+    }
+
+    @media (max-width: 800px) {
+        // Tamaño small
+        #{$property}: $value;
+    }
+}
+
+/*@mixin responsive ($media) {
+    @if ($media == small) {
         @media(max-width: 800px) {
             @content;
         }
     }
 
-    @else if ($media ==medium) {
+    @else if ($media == medium) {
         @media(max-width: 800px) {
             @content;
         }
     }
-}
+}*/
