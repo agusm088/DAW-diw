@@ -1,0 +1,10 @@
+#botones button {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+.row {
+    margin: auto;
+    width: 250px;
+}
